@@ -8,12 +8,12 @@
 
 </head>
 <body>
-<form action="/action_page.php">
-    <textarea id="textarea_home" name="textarea_home" rows="4" cols="50">
-    At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
-    </textarea>
+<h2>Initial text</h2>
+<form action={% url 'reverse' %}>
+    <textarea id="usertext" name="usertext" rows="4" cols="50">
+They offer free tutorials in all web development technologies.</textarea>
     <br><br>
-    <input type="submit">
+    <input type="submit" value = "Reverse it!">
 </form>
 </body>
 </html>
